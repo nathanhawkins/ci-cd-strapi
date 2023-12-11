@@ -1,0 +1,72 @@
+---
+layout: page
+title: "About Me"
+---
+
+<section class="pt-5 padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="/assets/images/about.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h5 class="text-uppercase letter-spacing mb-4">Who am I?</h5>
+                                <p>Strumming to the heartbeat of Mariachi, Nathan is renowned for bringing authentic Mexican melodies to stages worldwide. With a voice that resonates and a trumpet that calls, he celebrates tradition while giving it a modern twist. Offstage, you might find Nathan fine-tuning his guitar or exploring new rhythms to incorporate. For him, music isn't just sound—it's soul.</p>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <h5 class="text-uppercase letter-spacing mb-4">My vision</h5>
+                                <p>Empowering voices, sharing stories. Our blog is a tapestry of diverse narratives, curated to inspire, challenge, and resonate. Here, every word matters. Dive in, and let's shape tomorrow's conversations together.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <h5 class="text-uppercase letter-spacing mb-4">Don't Follow Me :</h5>
+                                {% assign author_info = site.author_info | limit: "1" %} 
+                                {% for data in author_info %}
+                                {% include follow_socials.html %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <h3 class="mb-3 mt-5">I used to travel but now I just go to oklahoma and back.</h3>
+                        <p class="mb-5">It's terrible every single time.</p>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="about-widget mb-4 mb-lg-0">
+                                    <img src="/assets/images/news/news-1.jpg" alt="" class="img-fluid">
+                                    <h4 class="mt-3">Pennsylvania</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="about-widget mb-4 mb-lg-0">
+                                    <img src="/assets/images/news/news-2.jpg" alt="" class="img-fluid">
+                                    <h4 class="mt-3">Oklahoma</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="about-widget mb-4 mb-lg-0">
+                                    <img src="/assets/images/news/news-3.jpg" alt="" class="img-fluid">
+                                    <h4 class="mt-3">Carousel</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="about-widget mb-4 mb-lg-0">
+                                    <img src="/assets/images/news/news-4.jpg" alt="" class="img-fluid">
+                                    <h4 class="mt-3">Pizza</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<div class="sidebar sidebar-right">
+    <div class="sidebar-wrap mt-5 mt-lg-0">
+        {% assign author_info = site.author_info %} {% for data in author_info %}
+        <div class="author-widget">
+            <div class="sidebar-widget about mb-5 text-center p-3">
+                {% if data['image'] %}
+                <div class="about-author">
+                    <img src="{{data['image'] | relative_url }}" alt="{{data['name']}}" class="img-fluid">
+                </div>
+                {% endif %}
+                <h4 class="mb-0 mt-4">{{data['name']}}</h4>
+                <p>{{data['designation']}}</p>
+                <p>{{data['bio']}}</p>
+                </div>
+
+            <div class="sidebar-widget follow mb-5 text-center">
+                <h4 class="text-center widget-title">Follow Me</h4> {% include follow_socials.html %}
+            </div>
+        </div>
+        {% endfor %}
+        <div class="sidebar-widget mb-5 "></div>
+        <div class="sidebar-widget subscribe mb-5">
+            <h4 class="text-center widget-title">Newsletter</h4>
+            <form action="{{site.mailchimp_list}}" target="__blank" method="post">
+                <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                <button class="btn btn-primary d-block mt-3" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
